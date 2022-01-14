@@ -1,0 +1,4 @@
+[
+    {"id":1,"name":"Pikachu","type":["electric"],"weakness":["Sand"],"evolutions":["Raichu"]},
+    {"id":2,"name":"Perrito","type":[],"weakness":[],"evolutions":[]}
+]
