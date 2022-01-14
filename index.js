@@ -5,7 +5,6 @@ let {readPokedex,saveNewPokemon} = require("./PokeFunctions.js")
 let procesar = process.argv;
 let option2 = procesar[2]
 let getInfo3 = procesar[3]
-//let gerInfo4 = procesar[4]
 
 switch (option2)
 {
@@ -19,8 +18,8 @@ switch (option2)
     case 'create':
     let newPokemon =
     {
-        id: 2,
-        name: getInfo3,
+        id: getInfo3,
+        name: getInfo4,
         type: [],
         weakness: [],
         evolutions: []
