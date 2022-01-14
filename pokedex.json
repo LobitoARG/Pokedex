@@ -1,1 +1,1 @@
-[{"id":1,"name":"Charizard"},{"id":1,"pokeName":"Charizard","type":"'fire','flying'","weaknesses":"'water','electric','rock'","evolutions":"perrito"}]
+[{"id":1,"pokeName":"Charizard","type":"'fire','flying'","weaknesses":"'water','electric','rock'","evolutions":"perrito"},{"id":"2","pokeName":"Pikachu","type":"'electric','flying'","weaknesses":"'water','earth'","evolutions":"Raichu"}]

@@ -2,6 +2,10 @@ const { ENOTEMPTY } = require("constants");
 let fs = require("fs");
 let {readPokedex,saveNewPokemon} = require("./PokeFunctions.js")
 
+"use strict";
+const ps = require("prompt-sync");
+const prompt = ps();
+
 
 let procesar = process.argv;
 let option2 = procesar[2]
@@ -63,7 +67,12 @@ switch (option2)
     break;
     
     case 'create':
-    let newPokemon = new Pokemon ({id: 1,pokeName: "Charizard",type: "'fire','flying'", weaknesses: "'water','electric','rock'",evolutions: "perrito"});
+    //let newPokemon = new Pokemon ({id: 1,pokeName: "Charizard",type: "'fire','flying'", weaknesses: "'water','electric','rock'",evolutions: "perrito"});
+    let newPokemon = new Pokemon ({id: prompt("Enter pokemon id: "),
+    pokeName: prompt("Enter pokemon name: "),
+    type: prompt("Enter type: "),
+    weaknesses: prompt("Enter weaknesses: "),
+    evolutions: prompt("Enter evaluations: ")});
     /*
     newPokemon.setType("fire");
     newPokemon.setType("flying");
