@@ -8,22 +8,31 @@ let option2 = procesar[2]
 let getInfo3 = procesar[3]
 //let gerInfo4 = procesar[4]
 
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
 class Pokemon {
     constructor({
         id,
         pokeName,
-        type: [],
-        weaknesses:  [],
-        evolutions: [], 
+        type,
+        weaknesses,
+        evolutions, 
     })
     {
         this.id=id;
         this.pokeName= pokeName;
-        this.type;
-        this.weaknesses;
-        this.evolutions;
+        this.type=type;
+        this.weaknesses=weaknesses;
+        this.evolutions=evolutions;
 
     }
+
+    /*
     setId(id){
         this.id=id;
     }
@@ -40,6 +49,7 @@ class Pokemon {
     setEvoutions(evolution){
         this.evolutions.push(evolution);
     }
+    */
 
 }
 
@@ -53,14 +63,15 @@ switch (option2)
     break;
     
     case 'create':
-    let newPokemon = new Pokemon ({id: 1,pokeName: "Charizard",});
+    let newPokemon = new Pokemon ({id: 1,pokeName: "Charizard",type: "'fire','flying'", weaknesses: "'water','electric','rock'",evolutions: "perrito"});
+    /*
     newPokemon.setType("fire");
     newPokemon.setType("flying");
     newPokemon.setWeaknesses("water");
     newPokemon.setWeaknesses("electric");
     newPokemon.setWeaknesses("rock");
     newPokemon.setEvoutions("perrito");
-    
+    */
 
 
     console.log(newPokemon);
